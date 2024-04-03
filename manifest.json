@@ -1,0 +1,20 @@
+{
+    "manifest_version":2,
+    "name":"NoTriche",
+    "version":"1.0",
+    "description":"Détecter toutes formes de tricherie",
+    "permissions":[
+        "tabs",
+        "activeTab"
+    ],
+  
+    "browser_action":{
+        "default_popup":"popup.html"
+    },
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "js":["script.js"]
+        }
+    ]
+}
