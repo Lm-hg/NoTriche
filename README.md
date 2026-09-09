@@ -73,8 +73,4 @@ L’API démarre sur le port `8080`.
 - `GET /triche3?name=<nom>` : changement de visibilité
 - `GET /triche4?name=<nom>` : clic droit
 
-## Bonnes pratiques
 
-- Ne jamais versionner de clé Supabase en clair.
-- Restreindre les permissions de l’extension au strict nécessaire.
-- Utiliser ce projet dans un cadre pédagogique et conforme aux règles locales.
