@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 const cors=require('cors');
 
 const { createClient } =require('@supabase/supabase-js');
-const supabaseUrl = 'https://rryldjiwdkyudbcfoyvd.supabase.co'
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJyeWxkaml3ZGt5dWRiY2ZveXZkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDE4NTEyNzAsImV4cCI6MjAxNzQyNzI3MH0.vKEY_kySabVR7Ly1rd0yO0zPoe8gwEqOh0KH-BfyGZY"
+const supabaseUrl = process.env.SUPABASE_URL || 'https://votre-projet.supabase.co';
+const supabaseKey = process.env.SUPABASE_KEY || 'VOTRE_SUPABASE_KEY';
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 //instantiation
